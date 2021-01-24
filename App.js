@@ -9,10 +9,11 @@ import {
   Touchable,
   View,
 } from "react-native";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
   console.log("App Executed");
-  return <Welcome />;
+  return <ViewImageScreen />;
 }
 
 const styles = StyleSheet.create({

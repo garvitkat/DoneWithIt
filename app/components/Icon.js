@@ -5,7 +5,7 @@ import colors from "../config/colors";
 //Here in-line stylesheet is used because scope of variables is limited to the function
 export default function Icon({
   name,
-  size = 40,
+  size = 50,
   backgroundColor = colors.black,
   iconColor = colors.white,
 }) {

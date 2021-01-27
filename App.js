@@ -16,6 +16,7 @@ import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import MessageScreen from "./app/screens/MessageScreen";
 import Icon from "./app/components/Icon";
 import Screen from "./app/components/Screen";
+import ListItem from "./app/components/ListItem";
 
 export default function App() {
   console.log("App Executed");
@@ -30,7 +31,7 @@ export default function App() {
     //   {/* <AppButton title="Login" onPress={() => console.log("Button Tapped")} /> */}
     // </View>
     <Screen>
-      <Icon name="email" />
+      <ListItem title="head" iconComponent={<Icon name="email" />} />
     </Screen>
     // <MessageScreen />
   );

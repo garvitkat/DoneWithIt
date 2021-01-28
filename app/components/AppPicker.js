@@ -13,7 +13,7 @@ import AppText from "./AppText";
 import Screen from "./Screen";
 import defaultStyles from "../config/styles";
 import PickerItem from "./PickerItem";
-import AppButton from "./Button";
+import AppButton from "./AppButton";
 import colors from "../config/colors";
 
 function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {

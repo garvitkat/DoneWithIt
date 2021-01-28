@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import Welcome from "./app/screens/Welcome";
 import {
   SafeAreaView,
@@ -19,8 +19,25 @@ import Screen from "./app/components/Screen";
 import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingsScreen from "./app/screens/ListingScreen";
+import AppTextInput from "./app/components/AppTextInput";
+import AppPicker from "./app/components/AppPicker";
+const itemData = [
+  {
+    value: 1,
+    label: "Cat1",
+  },
+  {
+    value: 2,
+    label: "Cat2",
+  },
+  {
+    value: 3,
+    label: "Cat3",
+  },
+];
 
 export default function App() {
+  const [item, setItem] = useState(itemData[0]);
   console.log("App Executed");
   return (
     // <View style={styles.container}>
@@ -32,8 +49,16 @@ export default function App() {
 
     //   {/* <AppButton title="Login" onPress={() => console.log("Button Tapped")} /> */}
     // </View>
-
-    <ListingsScreen />
+    <Screen>
+      {/* <AppTextInput icon="email" placeholder="Username" /> */}
+      <AppPicker
+        icon="apps"
+        items={itemData}
+        selectedItem={item}
+        onSelectItem={(item) => setItem(item)}
+        placeholder="Category"
+      />
+    </Screen>
   );
 }
 

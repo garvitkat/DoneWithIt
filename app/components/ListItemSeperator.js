@@ -9,8 +9,9 @@ function ListItemSeperator() {
 
 const styles = StyleSheet.create({
   seperator: {
-    width: "100%",
-    height: 1,
+    width: "95%",
+    height: 1.25,
+    alignSelf: "center",
     backgroundColor: colors.light,
   },
 });

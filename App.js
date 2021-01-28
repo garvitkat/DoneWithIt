@@ -13,6 +13,12 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppButton from "./app/components/Button";
 import Card from "./app/components/Card";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import MessageScreen from "./app/screens/MessageScreen";
+import Icon from "./app/components/Icon";
+import Screen from "./app/components/Screen";
+import ListItem from "./app/components/ListItem";
+import AccountScreen from "./app/screens/AccountScreen";
+import ListingsScreen from "./app/screens/ListingScreen";
 
 export default function App() {
   console.log("App Executed");
@@ -26,7 +32,8 @@ export default function App() {
 
     //   {/* <AppButton title="Login" onPress={() => console.log("Button Tapped")} /> */}
     // </View>
-    <ListingDetailsScreen />
+
+    <ListingsScreen />
   );
 }
 

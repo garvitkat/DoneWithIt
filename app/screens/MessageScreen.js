@@ -8,8 +8,10 @@ import Screen from "../components/Screen";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title:
+      "helloooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooafgisdgfigfisgfilosgfolsfloshfsafhkslfhskfhsfhsfhskfgslfgsdlgf;owgflogsdoadfglodsg",
+    description:
+      "sfsgfwejgfiwegfikwefgigffgfgiseagfieswgfiwaelflksfgsfgskfgsjdkfdgsdfgsfgslfgsdkfgskfgsakjfkjsfgkiasdfgksdifgajkdfgskjifks",
     image: require("../assets/Garvit.jpg"),
   },
   {

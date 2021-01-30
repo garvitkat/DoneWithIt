@@ -4,7 +4,7 @@ import AppText from "../components/AppText";
 import AppButton from "../components/AppButton";
 import colors from "../config/colors";
 
-export default function Welcome() {
+export default function Welcome({ navigation }) {
   return (
     <ImageBackground
       source={require("../assets/background.jpg")}
@@ -19,8 +19,12 @@ export default function Welcome() {
         <AppText style={styles.tagline}>Buy and Sell</AppText>
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title="Login" />
-        <AppButton title="Register" color="secondary" />
+        <AppButton title="Login" onPress={() => navigation.navigate("Login")} />
+        <AppButton
+          title="Register"
+          color="secondary"
+          onPress={() => navigation.navigate("Register")}
+        />
       </View>
     </ImageBackground>
   );

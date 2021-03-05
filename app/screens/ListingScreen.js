@@ -8,19 +8,19 @@ import colors from "../config/colors";
 const listings = [
   {
     id: 1,
-    title: "Red jacket for sale ",
-    price: 100,
-    image: require("../assets/jacket.jpg"),
+    title: "Choco Lava Cake",
+    price: 25,
+    image: require("../assets/chocolavacake.jpg"),
   },
   {
     id: 2,
-    title: "Couch in great condition",
-    price: 1000,
-    image: require("../assets/couch.jpg"),
+    title: "Crispy Chicken Burger",
+    price: 75,
+    image: require("../assets/crispychickenburger.jpg"),
   },
 ];
 
-function ListingsScreen(props) {
+function ListingsScreen({ navigation }) {
   return (
     <Screen style={styles.screen}>
       <FlatList
@@ -29,8 +29,9 @@ function ListingsScreen(props) {
         renderItem={({ item }) => (
           <Card
             title={item.title}
-            subTitle={"Rs." + item.price}
+            subTitle={"₹ " + item.price}
             image={item.image}
+            onPress={() => navigation.navigate("ListingDetails", item)}
           />
         )}
       />

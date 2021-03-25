@@ -1,21 +1,26 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
-import { TouchableWithoutFeedback } from "react-native-gesture-handler";
-import colors from "../config/colors";
-import AppText from "./AppText";
+import {
+  View,
+  StyleSheet,
+  Image,
+  TouchableWithoutFeedback,
+} from "react-native";
 
-export default function Card({ title, subTitle, image, onPress }) {
+import Text from "./AppText";
+import colors from "../config/colors";
+
+function Card({ title, subTitle, imageUrl, onPress }) {
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.card}>
-        <Image source={image} style={styles.img} />
+        <Image style={styles.image} source={{ uri: imageUrl }} />
         <View style={styles.detailsContainer}>
-          <AppText style={styles.title} numberOfLines={1}>
+          <Text style={styles.title} numberOfLines={1}>
             {title}
-          </AppText>
-          <AppText style={styles.subTitle} numberOfLines={2}>
+          </Text>
+          <Text style={styles.subTitle} numberOfLines={2}>
             {subTitle}
-          </AppText>
+          </Text>
         </View>
       </View>
     </TouchableWithoutFeedback>
@@ -32,10 +37,7 @@ const styles = StyleSheet.create({
   detailsContainer: {
     padding: 20,
   },
-  title: {
-    marginBottom: 7,
-  },
-  img: {
+  image: {
     width: "100%",
     height: 200,
   },
@@ -43,4 +45,9 @@ const styles = StyleSheet.create({
     color: colors.secondary,
     fontWeight: "bold",
   },
+  title: {
+    marginBottom: 7,
+  },
 });
+
+export default Card;

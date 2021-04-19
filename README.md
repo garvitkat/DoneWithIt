@@ -21,11 +21,15 @@
 Scan [QR Code](https://expo.io/@garvitkat/projects/freefood) via the [Expo mobile app](https://play.google.com/store/apps/details?id=host.exp.exponent), or by using [Appetize Emulator](https://expo.io/appetize-simulator?url=https://expo.io/@garvitkat/freefood) (`Scroll down` &#8594; `Open project using Expo`).
 
 ### App Screenshots and Video
-<img src="app/assets/App Mockup.png" width="100%" alt="Mockup for application"/>
+<!-- <img src="app/assets/App Mockup.png" width="100%" alt="Mockup for application"/> -->
 <p float="left">
   <img src="/screenshots/image1.jpeg" width="33%" />
   <img src="screenshots/image2.jpeg" width="33%" /> 
   <img src="screenshots/image3.jpeg" width="33%" />
+</p>
+<p float="left" align="center">
+  <img src="/screenshots/image4.jpeg" width="33%" />
+  <img src="screenshots/image5.jpeg" width="33%" /> 
 </p>
 
 ### Running the application on your machine

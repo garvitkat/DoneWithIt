@@ -22,6 +22,11 @@ Scan [QR Code](https://expo.io/@garvitkat/projects/freefood) via the [Expo mobil
 
 ### App Screenshots and Video
 <img src="app/assets/App Mockup.png" width="100%" alt="Mockup for application"/>
+<p float="left">
+  <img src="/app/assets/image1.jpeg" width="100" />
+  <img src="/app/assets/image2.jpeg" width="100" /> 
+  <img src="/app/assets/image3.jpeg" width="100" />
+</p>
 
 ### Running the application on your machine
 

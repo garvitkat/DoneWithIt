@@ -1,23 +1,22 @@
 import React from "react";
 import { Image, StyleSheet, View } from "react-native";
-import colors from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+
+import colors from "../config/colors";
 
 function ViewImageScreen(props) {
   return (
     <View style={styles.container}>
-      <MaterialCommunityIcons
-        style={styles.closeIcon}
-        name="close"
-        color={colors.white}
-        size={35}
-      />
-      <MaterialCommunityIcons
-        style={styles.deleteIcon}
-        name="delete"
-        color={colors.white}
-        size={35}
-      />
+      <View style={styles.closeIcon}>
+        <MaterialCommunityIcons name="close" color="white" size={35} />
+      </View>
+      <View style={styles.deleteIcon}>
+        <MaterialCommunityIcons
+          name="trash-can-outline"
+          color="white"
+          size={35}
+        />
+      </View>
       <Image
         resizeMode="contain"
         style={styles.image}
@@ -45,7 +44,6 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
-    zIndex: -1,
   },
 });
 

@@ -32,7 +32,7 @@ function AccountScreen({ navigation }) {
         <ListItem
           title="Garvit Kataria"
           subTitle="garvitkataria.com"
-          image={require("../assets/Garvit.jpg")}
+          image={require("../assets/gk.jpg")}
         />
       </View>
       <View style={styles.container}>

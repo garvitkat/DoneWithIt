@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { FlatList, StyleSheet } from "react-native";
 
 import ActivityIndicator from "../components/ActivityIndicator";
-import Button from "../components/AppButton";
+import Button from "../components/Button";
 import Card from "../components/Card";
 import colors from "../config/colors";
 import listingsApi from "../api/listings";
 import routes from "../navigation/routes";
 import Screen from "../components/Screen";
-import AppText from "../components/AppText";
+import AppText from "../components/Text";
 import useApi from "../hooks/useApi";
 
 function ListingsScreen({ navigation }) {
@@ -33,9 +33,10 @@ function ListingsScreen({ navigation }) {
         renderItem={({ item }) => (
           <Card
             title={item.title}
-            subTitle={"$" + item.price}
+            subTitle={"Rs." + item.price}
             imageUrl={item.images[0].url}
             onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
+            thumbnailUrl={item.images[0].thumbnailUrl}
           />
         )}
       />
